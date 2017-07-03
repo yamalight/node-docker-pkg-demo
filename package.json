@@ -1,0 +1,15 @@
+{
+  "name": "docker-multistage-build-demo",
+  "version": "1.0.0",
+  "description": "Node.js demo for docker multistage builds",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "package": "pkg -t node8-alpine-x64 --output app index.js"
+  },
+  "author": "Tim Ermilov <yamalight@gmail.com> (http://codezen.net)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
