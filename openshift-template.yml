@@ -152,7 +152,7 @@ objects:
   metadata:
     annotations:
       description: Acompanha as mudanças na imagem do aplicativo
-    name: ${NAME}-cp
+    name: ${NAME}
 - apiVersion: v1
   kind: ImageStream
   metadata:
