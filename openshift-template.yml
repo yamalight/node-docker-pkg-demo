@@ -78,8 +78,8 @@ objects:
     ports:
     - name: api
       protocol: TCP
-      port: 80
-      targetPort: 80
+      port: 3000
+      targetPort: 3000
     selector:
       name: ${NAME}
 - apiVersion: v1
@@ -220,20 +220,20 @@ objects:
         - image: ${NAME}:latest
           name: ${NAME}
           ports:
-            - containerPort: 5000
+            - containerPort: 3000
               protocol: TCP
           imagePullPolicy: Always
           livenessProbe:
             httpGet:
-              path: /hc
-              port: 5000
+              path: /
+              port: 3000
               scheme: HTTP
             initialDelaySeconds: 10
             timeoutSeconds: 30
             periodSeconds: 60
           readinessProbe:
             tcpSocket:
-              port: 5000
+              port: 3000
             initialDelaySeconds: 10
             timeoutSeconds: 30
             periodSeconds: 60
