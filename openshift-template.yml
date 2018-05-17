@@ -18,11 +18,11 @@ parameters:
   name: NAME
   required: true
   value: nodejs
-- description: O nome do host exposto que irá rotear para o serviço .NET (Container)
+- description: O nome do host exposto que irá rotear para o serviço node (Container)
   displayName: URL do Container
   name: CONTAINER_DOMAIN
   value: node-talita-teste.127.0.0.1.nip.io 
-- description: O nome do host exposto que irá rotear para o serviço .NET (App)
+- description: O nome do host exposto que irá rotear para o serviço node (App)
   displayName: URL do APP
   name: APPLICATION_DOMAIN
   value: node-talita-teste.127.0.0.1.nip.io 
@@ -36,7 +36,7 @@ parameters:
   name: SOURCE_SECRET
   required: true
   value: github-secret
-- description: Quantidade máxima de memória que o contêiner .NET pode usar.
+- description: Quantidade máxima de memória que o contêiner node pode usar.
   displayName: Limite de memória
   name: MEMORY_LIMIT
   required: true
