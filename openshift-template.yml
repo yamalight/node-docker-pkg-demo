@@ -166,7 +166,7 @@ objects:
       description: Define como construir o aplicativo
     name: ${NAME}
   spec:
-    output:
+    output:push ori
       to:
         kind: ImageStreamTag
         name: ${NAME}:latest
